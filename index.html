@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-main">
+        <img class="logo" src="./image/Logo.png" alt="">
+      </div>
+    </header>
+
+    <main class="container">
+        <textarea id="main-tela" class="input" placeholder="Digite seu texto" required></textarea>
+        <!-- <div id="main-tela" class="input" role="textbox" contenteditable><span id="tela">Digite seu texto</span></div> -->
+        <img id="bg" class="exclamacao" src="./image/Vector.png" alt="">
+        <span class="alert">Apenas letras minusculas e sem acento.</span>
+        <button id="btn1" class="criptografar">Criptografar</button>
+        <button id="btn2" class="descriptografar">Descriptografar</button>
+      <div class="textbox" data-answer-box>
+        <textarea readonly id="textbox" class="resultadOff"></textarea>
+        <img class="" src="./image/icon.png" alt="">
+        <h2 class="aviso">Nenhuma mensagem encontrada</h2>
+        <p class="paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+    </main>
+
+  <script src="main.js"></script>
+  </body>
+</html>
